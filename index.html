@@ -18,7 +18,7 @@
     <nav>
       <h1>Healhty<span>Carely</span></h1>
 
-      <ul class="menu-item">
+      <ul class="menu">
         <li>
           <a href="">Home</a>
         </li>
@@ -34,7 +34,7 @@
       </ul>
     </nav>
 
-    <div>
+    <div class="header-buttons">
       <button class="limitless">Sign In</button>
       <button class="header-btn">Sign Up</button>
     </div>
@@ -42,7 +42,7 @@
 
   <main>
     <div class="main-text">
-      <h2>Medical Care Now
+      <h2 class="main-header">Medical Care Now
         Simplified For <span>Everyone</span></h2>
       <p class="main-paragraph">Health carely is a new way to get health insurance quotes. We offer tools similar to
         those
@@ -55,8 +55,8 @@
       <img class="main-big" src="img/header/female doctor_fococlipping_removed 1.png" alt="famale doctor">
       <div class="main-card">
         <img class="main-small" src="img/header/doctor_sm.png" alt="famale doctor">
-        <h3>Dr. Shimanta</h3>
-        <p>Skin Specialist</p>
+        <h3 class="main-doctor">Dr. Shimanta</h3>
+        <p class="main-description">Skin Specialist</p>
         <button class="card-btn">Make Schedule</button>
       </div>
     </div>
@@ -65,7 +65,7 @@
   <section class="solutions">
     <h3 class="heading">Fast Solutions</h3>
     <p class="subheading">step by step to get your solutions</p>
-    <div class="block-card">
+    <div class="cards">
       <div class="card">
         <img src="img/card_img/card_1.svg" alt="search">
         <h4 class="card-title">Check health complaints</h4>
@@ -98,7 +98,7 @@
     </div>
   </section>
 
-  <section class="find-doctor">
+  <section class="find">
     <div class="find-text">
       <h3 class="find-title">Find Doctor</h3>
       <p class="find-subtitle">Find the right doctor according
@@ -108,31 +108,82 @@
         needs and connects you with your HealthCarely community for ongoing
         support throughout your journey to healthier living.</p>
 
-      <img src="img/main_img/check.png" alt="check">
-      <p>100% free app designed to help you find the right doctor for you. </p>
-      <img src="img/main_img/check.png" alt="check">
-      <p>Available 900 doctors specialist</p>
+      <ul class="find-check">
+        <li class="check">
+          <img src="img/main_img/check.png" alt="check">
+          <p>100% free app designed to help you find the right doctor for you. </p>
+        </li>
 
-      <button class="find-btn">See the Doctors</button>
+        <li class="check">
+          <img src="img/main_img/check.png" alt="check">
+          <p>Available 900 doctors specialist</p>
+        </li>
+      </ul>
+
+      <button class="text-btn">See the Doctors</button>
     </div>
 
     <div class="find-img">
       <img class="find-big" src="img/main_img/Search_doctor.png" alt="famale doctor">
 
-      <div class="find-card">
-        <h4 class="card-title">Available Doctors</h4>
-        <p class="card-paragraph">Select Doctors</p>
+      <div class="find-cards">
+        <h3>Available Doctors</h3>
+        <p>Select Doctors</p>
 
-        <img class="find-small" src="img/main_img/Dr.Adinda.png" alt="famale doctor">
-        <p>Dr. Adinda</p>
-        <p>Eye Specialist</p>
+        <div class="card-doctor">
+          <img class="find-small" src="img/main_img/Dr.Adinda.png" alt="famale doctor">
+          <ul>
+            <li class="find-card">
+              <h4>Dr. Adinda</h4>
+              <p>Eye Specialist</p>
+            </li>
+          </ul>
+        </div>
 
-        <img class="find-small" src="img/main_img/Dr.Jackson.png" alt="famale doctor">
-        <p>Dr. Jackson</p>
-        <p>Ear Specialist</p>
+        <div class="card-doctor">
+          <img class="find-small" src="img/main_img/Dr.Jackson.png" alt="famale doctor">
+          <ul>
+            <li class="find-card">
+              <h4>Dr. Jackson</h4>
+              <p>Ear Specialist</p>
+            </li>
+          </ul>
+        </div>
 
-        <button class="card-btn">Find Doctor</button>
+
+        <button class="find-btn">Find Doctor</button>
       </div>
+    </div>
+  </section>
+
+  <section class="schedule">
+    <div class="schedule-img">
+      <img src="img/main_img/Shedule.png" alt="">
+    </div>
+
+    <div class="schedule-content">
+      <h3 class="schedule-title">Make a Shedule</h3>
+      <p class="schedule-subtitle">Make a schedule in advance
+        with the available doctor</p>
+      <p class="schedule-text">Healthcare is a very painful process, especially if you’re not taking care
+        of your health and having regular check-ups. HealhtyCarely makes it
+        easier for everyone to schedule a doctor’s appointment.</p>
+
+      <ul class="schedule-pros">
+        <li class="schedule-pro">
+          <img class="schedule-check" src="img/main_img/check.png" alt="check">
+          <p>Make a schedule online is easy</p>
+        </li>
+
+        <li class="schedule-pro">
+          <img class="schedule-check" src="img/main_img/check.png" alt="check">
+          <p>Easy to connect with doctor</p>
+        </li>
+      </ul>
+
+      <button class="schedule-btn">Make Schedule Now!
+
+      </button>
     </div>
   </section>
 
@@ -141,21 +192,21 @@
     <p class="subheading">We’re employee benefit at
       7500+ hospital </p>
 
-    <div class="rating-card">
-      <div class="card__flex">
-        <h3 class="card-numbers">900+</h3>
+    <div class="rating-cards">
+      <div class="card-counter">
+        <h3 class="card-number">900+</h3>
         <h4 class="card-title">Verified Specialist</h4>
         <p class="card-paragraph">Highly Verified</p>
       </div>
 
-      <div class="card__flex">
-        <h3 class="card-numbers">45000+</h3>
+      <div class="card-counter">
+        <h3 class="card-number">45000+</h3>
         <h4 class="card-title">Happy Costumers</h4>
         <p class="card-paragraph">Highly Performance</p>
       </div>
 
-      <div class="card__flex">
-        <h3 class="card-numbers">99,7%</h3>
+      <div class="card-counter">
+        <h3 class="card-number">99,7%</h3>
         <h4 class="card-title">Positive Feedback</h4>
         <p class="card-paragraph">Costumers Apporove</p>
       </div>
@@ -163,8 +214,58 @@
   </section>
 
   <section class="feedback">
-    some text
+
   </section>
+
+  <footer class="footer">
+    <div class="footer-text-content">
+      <h3 class="footer-title">Healhty<span>Carely</span></h3>
+      <p class="footer-text">This free App provides a solution to your health needs by offering
+        you a one-stop access to complete information about various
+        medical checkups. This App carries simple tips and advice to
+        help you maintain a healthy lifestyle.</p>
+    </div>
+
+    <nav class="footer-colums">
+      <div class="column">
+        <h4 class="column-title">Overview</h4>
+        <ul class="column-links">
+          <li><a href="">Checking Health</a></li>
+          <li><a href="">Find Doctor</a></li>
+          <li><a href="">Make a Schedule</a></li>
+        </ul>
+      </div>
+
+      <div class="column">
+        <h4 class="column-title">Company</h4>
+        <ul class="column-links">
+          <li><a href="">Home</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Services</a></li>
+        </ul>
+      </div>
+
+      <div class="column">
+        <h4 class="column-title">Explore</h4>
+        <ul class="column-links">
+          <li><a href="">Terms & Conds</a></li>
+          <li><a href="">Privacy Police</a></li>
+          <li><a href="">Cookies</a></li>
+        </ul>
+      </div>
+
+      <div class="column">
+        <h4 class="column-title">Social Media</h4>
+        <ul class="column-links">
+          <li>
+            <img src="img/footer/facebook.svg" alt="facebook">
+            <img src="img/footer/instagram.svg" alt="instagram">
+            <img src="img/footer/twitter.svg" alt="">
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </footer>
 </body>
 
 </html>

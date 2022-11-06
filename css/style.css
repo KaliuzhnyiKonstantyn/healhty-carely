@@ -1,8 +1,15 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+
 body {
     margin: 0;
 }
 
-li {
+.menu li {
     font-family: 'Manrope';
     text-decoration: none;
     display: inline;
@@ -10,8 +17,7 @@ li {
 }
 
 ul {
-    display: flex;
-    gap: 40px;
+    list-style: none;
 }
 
 a {
@@ -25,22 +31,36 @@ header {
     align-items: center;
     width: 1240px;
     margin: auto;
+    padding-top: 40px;
 }
 
 h1 {
     font-family: 'Manrope';
     color: #121212;
     font-size: 24px;
+    font-weight: 700;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 40px;
+}
+
+.menu {
+    display: flex;
+    gap: 40px;
+    list-style: none;
 }
 
 span {
     color: #4D77FF;
+}
+
+.header-buttons {
+    display: flex;
+    gap: 20px;
 }
 
 .limitless {
@@ -58,7 +78,7 @@ span {
     color: #FFFFFF;
 }
 
-h2 {
+.main-header {
     font-size: 54px;
     color: #121212;
     width: 634px;
@@ -74,6 +94,7 @@ main {
 
 .main-text {
     font-family: 'Manrope';
+    padding-top: 100px;
 }
 
 .main-paragraph {
@@ -81,6 +102,7 @@ main {
     width: 601px;
     height: 60px;
     line-height: 20px;
+    padding: 26px 0;
 }
 
 .primary-btn {
@@ -96,6 +118,7 @@ main {
 .main-img {
     position: relative;
     margin-left: -40px;
+    padding-top: 25px;
 }
 
 .main-img::before {
@@ -118,6 +141,7 @@ main {
 }
 
 .main-card {
+    font-family: 'Manrope';
     position: absolute;
     text-align: center;
     background-color: #fff;
@@ -128,17 +152,36 @@ main {
     bottom: 85px;
 }
 
-.main-small {
-    border-radius: 100%;
-}
-
 .card-btn {
+    font-family: 'Manrope';
     background-color: #4D77FF;
     color: #fff;
     border: 0;
     border-radius: 10px;
     width: 112px;
     height: 36px;
+    font-weight: 600;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.main-small {
+    border-radius: 100%;
+    margin-top: 15px;
+}
+
+.main-doctor {
+    margin-top: 7px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #121212;
+}
+
+.main-description {
+    margin-top: 5px;
+    font-weight: 400;
+    font-size: 12px;
+    color: #696969;
 }
 
 .solutions {
@@ -163,7 +206,7 @@ main {
     color: #121212;
 }
 
-.block-card {
+.cards {
     display: flex;
     gap: 30px;
 }
@@ -186,36 +229,73 @@ main {
 .card-title {
     font-size: 14px;
     color: #121212;
+    margin-top: 14px;
 }
 
 .card-paragraph {
     font-size: 12px;
     color: #696969;
+    margin-top: 12px;
 }
 
-.find-doctor {}
+.find {
+    overflow: hidden;
+    display: flex;
+    margin: auto;
+    padding: 0 calc(50vw - 629px);
+    padding-top: 100px;
+}
 
 .find-text {
     font-family: 'Manrope';
     width: 531px;
     height: 382px;
+    margin-top: 80px;
 }
 
 .find-title {
     font-size: 14px;
     color: #4D77FF;
+    font-weight: 700;
 }
 
 .find-subtitle {
     font-weight: 700;
     font-size: 32px;
     color: #121212;
+    padding-top: 10px;
 
 }
 
 .find-paragraph {
     font-size: 14px;
     color: #696969;
+    padding-top: 26px;
+}
+
+.text-btn {
+    width: 200px;
+    height: 52px;
+    background: #4D77FF;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #FFFFFF;
+    margin-top: 26px;
+}
+
+.find-check {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 26px;
+    gap: 14px;
+}
+
+.check {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .find-btn {
@@ -225,27 +305,196 @@ main {
     border: 0;
     border-radius: 10px;
     color: #FFFFFF;
+    margin-top: 26px;
+}
+
+.find-img {
+    width: 516px;
+    height: 589px;
+    margin-top: 80px;
+    position: relative;
+    margin-left: 195px;
+}
+
+.find-img::before {
+    content: "";
+    display: block;
+    height: 803px;
+    width: 803px;
+    background-color: #4D77FF;
+    border-radius: 50%;
+    position: absolute;
+    z-index: -1;
+    top: 135px;
+    left: -95px;
+}
+
+.find-cards {
+    font-family: 'Manrope';
+    position: absolute;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: -4px -10px 50px rgba(18, 18, 18, 0.1);
+    border-radius: 10px;
+    width: 202px;
+    height: 256px;
+    bottom: 298px;
+    left: -101px;
+}
+
+.find-cards h3 {
+    margin-top: 18px;
+    font-weight: 700;
+    font-size: 14px;
+    color: #121212;
+}
+
+.find-cards p {
+    font-weight: 400;
+    font-size: 12px;
+    color: #696969;
+}
+
+.card-doctor {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+
+.find-small {
+    width: 46px;
+    height: 46px;
+    border-radius: 100%;
+    margin: 20px 0 0 30px;
+}
+
+.find-card {
+    margin-top: 20px;
+}
+
+.find-btn {
+    background: #EDF1FF;
+    color: #4D77FF;
+    border: 0;
+    border-radius: 10px;
+    width: 142px;
+    height: 32px;
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+.schedule {
+    display: flex;
+    position: relative;
+    width: 1159px;
+    height: 401px;
+    gap: 61px;
+    margin: 150px auto;
+
+}
+
+.schedule-img {
+    width: 626px;
+    height: 401px;
+}
+
+.schedule-img img {
+    position: relative;
+    width: 611px;
+    height: 375px;
+    border-radius: 200px;
+}
+
+.schedule-img::before,
+.schedule-img::after {
+    content: '';
+    width: 611px;
+    height: 375px;
+    display: inline-block;
+    position: absolute;
+    border: 2px solid #4D77FF;
+    border-radius: 188px;
+    z-index: -1;
+    top: 16px;
+    left: -6px;
+}
+
+.schedule-img::after {
+    top: -10px;
+    left: 9px;
+}
+
+.schedule-content {
+    font-family: 'Manrope';
+}
+
+.schedule-title {
+    font-weight: 700;
+    font-size: 14px;
+    color: #4D77FF;
+}
+
+.schedule-subtitle {
+    margin-top: 10px;
+    font-weight: 700;
+    font-size: 32px;
+    color: #121212;
+}
+
+.schedule-text {
+    margin-top: 26px;
+    font-weight: 400;
+    font-size: 14px;
+    color: #696969;
+}
+
+.schedule-pros {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 26px;
+    gap: 14px;
+}
+
+.schedule-pro {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.schedule-btn {
+    font-family: 'Manrope';
+    width: 236px;
+    height: 52px;
+    background-color: #4D77FF;
+    border: 0;
+    border-radius: 10px;
+    color: #FFFFFF;
+    margin-top: 26px;
+    font-weight: 500;
+    font-size: 16px;
 }
 
 .rating {
     font-family: 'Manrope';
 }
 
-.rating-card {
+.rating-cards {
     display: flex;
     width: 921px;
     margin: 0 auto;
     gap: 30px;
 }
 
-.card-numbers {
+.card-number {
     font-weight: 700;
     font-size: 32px;
     color: #121212;
+    margin-top: 50px;
 }
 
-
-.card__flex {
+.card-counter {
     box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
     transition: 0.3s;
     width: 287px;
@@ -255,4 +504,54 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.footer {
+    display: flex;
+    font-family: 'Manrope';
+    width: 1226px;
+    height: 125px;
+    gap: 150px;
+    margin: 158px auto;
+}
+
+.footer-text-content {
+    width: 429px;
+    height: 125px;
+}
+
+.footer-title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: #121212;
+}
+
+.footer-text {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.015em;
+}
+
+.footer-colums {
+    display: flex;
+    width: 647px;
+    height: 124px;
+    align-items: baseline;
+}
+
+.column-title {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.column-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.column-links li {
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 14px;
 }
